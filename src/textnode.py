@@ -31,5 +31,5 @@ def text_node_to_html_mode(text_node: TextNode) -> HTMLNode:
     if text_node.text_type == "link" and text_node.url:
         return LeafNode("a", text_node.text, {"href": text_node.url})
     if text_node.text_type == "image" and text_node.url:
-        return LeafNode("img", None, {"src": text_node.url, "alt": text_node.text})
+        return LeafNode("img", "", {"src": text_node.url, "alt": text_node.text})
     raise Exception("Invalid TextNode type")

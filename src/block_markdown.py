@@ -1,7 +1,6 @@
 from htmlnode import HTMLNode
 from inline_markdown import text_to_textnodes
 from parentnode import ParentNode
-from leafnode import LeafNode
 from textnode import text_node_to_html_mode
 
 
